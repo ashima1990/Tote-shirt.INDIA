@@ -125,9 +125,11 @@
             </form>
 
 
-            <p class="demo-text">
-                Demo website — your login is stored only
-                in this browser.
+            <button type="button" id="resetPasswordButton" class="demo-text" style="background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;">
+                Forgot password?
+            </button>
+            <p class="demo-text" id="authMessage" role="status" aria-live="polite">
+                Sign in or create your Tote Shirt account.
             </p>
 
         </div>
@@ -688,6 +690,7 @@
 
 
 <script src="script.js"></script>
+<script type="module" src="firebase-auth.js"></script>
 <script>
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
