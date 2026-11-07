@@ -1,4 +1,4 @@
-const CACHE_NAME = "tote-shirt-app-v1";
+const CACHE_NAME = "tote-shirt-app-v2";
 const APP_FILES = ["./", "./index.html", "./css.css", "./script.js", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", event => {
